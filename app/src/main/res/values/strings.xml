@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PruebaNach</string>
+
+    <string name="alert">Alerta</string>
+    <string name="message">Para poder ingresar a la aplicación por primera vez, es necesario contar con Internet para la descarga del cátalogo de peliculas.</string>
+    <string name="ok">OK</string>
+
+    <string name="title_notification">Se obtuvieron tus coordenadas</string>
+    <string name="text_notification">Latitud: %1$s Longitud: %2$s</string>
+    <string name="sub_text_notification">Oscar Vazquez</string>
+
+    <string name="channel_id">channel_id</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+
+    <string name="tv_map">Mapa</string>
+    <string name="tv_galery">Galeria</string>
+    <string name="tv_camara">Camara</string>
+    <string name="camara">Camara</string>
+    <string name="imagencapturada">ImagenCapturada</string>
+</resources>

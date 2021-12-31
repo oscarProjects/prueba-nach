@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.oscarvj.pruebanach.ui.view.movies.MoviesFragment"
+        android:label="HomeFragmentView"
+        tools:layout="@layout/fragment_movies">
+
+        <argument
+            android:name="hasInternet"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_detailMovieFragment"
+            app:destination="@id/detailMovieFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_MapFragment"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_PhotoFragment"
+            app:destination="@id/photoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.oscarvj.pruebanach.ui.view.movies.detail.DetailMovieFragment"
+        android:label="DetailCategoryFragmentView"
+        tools:layout="@layout/fragment_detail_movie">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.oscarvj.pruebanach.ui.view.locations.MapsFragment"
+        android:label="LocationsFragmentView"
+        tools:layout="@layout/fragment_maps">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.oscarvj.pruebanach.ui.view.photo.PhotoFragment"
+        android:label="PhotoFragmentView"
+        tools:layout="@layout/fragment_photo">
+
+    </fragment>
+</navigation>
